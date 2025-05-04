@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem">
+    <img src="/assets/livro.jpg" class="card-img-top" alt="imagem de livro" />
+    <div class="card-body">
+        <h5 class="card-title text-center">{{ livro?.titulo }}</h5>
+        <div class="d-flex justify-content-between ">
+            <span> Avaliação {{ livro?.avaliacao }} / 5 </span>
+            <a routerLink="/detalhes" class="btn btn-primary">Detalhes</a >
+        </div>
+    </div>
+</div>

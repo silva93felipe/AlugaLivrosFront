@@ -1,0 +1,7 @@
+<section class="container-lg">
+    <!-- <app-livro-card *ngFor="let livro of livro$ | async"></app-livro-card> -->
+     <ng-container  *ngFor="let livro of livro$ | async">
+         <app-livro-card  [livro]="livro" ></app-livro-card> 
+     </ng-container>
+</section>
+
