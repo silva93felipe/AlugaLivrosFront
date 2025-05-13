@@ -1,0 +1,8 @@
+<section class="container-lg">
+    <button type="button" class="btn btn-success my-3" routerLink="new/">+ ADD</button>
+    <div class="row">
+        <ng-container  *ngFor="let livro of livro$ | async">
+            <app-livro-card class="col mb-4"  [livro]="livro" ></app-livro-card> 
+        </ng-container>
+    </div>
+</section>
